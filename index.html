@@ -6,6 +6,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Are+You+Serious&display=swap" rel="stylesheet">
   <style>
    body {
       font-family: 'Roboto', sans-serif;
@@ -14,6 +17,14 @@
     list-style-type: none;
     padding-left: 0; /* Removes any left padding */
   }
+
+  .are-you-serious-regular {
+  font-family: "Are You Serious", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 2px;
+}
+
   
   /* Specific style for each link inside the mobile menu to remove bullet points */
   #mobileMenu a {
@@ -27,7 +38,7 @@
   <header class="bg-gray-900 text-white shadow-md">
    <div class="container mx-auto flex justify-between items-center py-4 px-6">
     <div class="text-2xl font-bold">
-     <a href="#">Innocent World<span class="text-yellow-400">.</span></a>
+     <a href="#">Dev-Innocent<span class="text-yellow-400">.com</span></a>
     </div>
     <div class="lg:hidden">
      <button class="text-white focus:outline-none" id="menuButton">
@@ -58,7 +69,8 @@
   </header>
   <main class="container mx-auto flex flex-col lg:flex-row py-12 px-6">
    <section class="lg:w-1/2 space-y-6">
-    <h1 class="text-5xl font-bold text-gray-800">Hi! I Am <br/> Chukwuma Innocent</h1>
+    <h1 class="text-5xl font-bold text-gray-800 ">Hi! I Am</h1>
+    <h1 class="are-you-serious-regular text-5xl font-bold text-gray-800">Chukwuma Innocent</h1>
     <span class="inline-block bg-yellow-400 text-gray-800 px-3 py-1 rounded-full text-sm">UI/UX</span>
     <span class="inline-block bg-yellow-400 text-gray-800 px-3 py-1 rounded-full text-sm">Frontend Developer</span>
     <p class="text-gray-600">Designing user interfaces for over <strong>3 years</strong> as a Web developer</p>
@@ -66,29 +78,27 @@
      <button class="bg-yellow-500 text-white px-6 py-2 rounded hover:bg-yellow-600">
       <a href="#">Hire Me</a>
      </button>
-     <a class="flex items-center text-gray-600 hover:text-gray-800" href="#">Projects <i class="fas fa-arrow-right ml-2"></i></a>
+     <a class="flex items-center text-gray-600 hover:text-gray-800 px-4" href="#">Projects <i class="fas fa-arrow-right ml-2"></i></a>
     </div>
     <div class="flex space-x-8">
      <div>
-      <p class="text-2xl font-bold text-gray-800">+20</p>
+      <p class="text-2xl font-bold text-gray-800">20+</p>
       <p class="text-gray-600">Clients worldwide</p>
      </div>
      <div>
-      <p class="text-2xl font-bold text-gray-800">75</p>
+      <p class="text-2xl font-bold text-gray-800">50+</p>
       <p class="text-gray-600">Projects Done</p>
      </div>
      <div>
-      <p class="text-2xl font-bold text-gray-800">Contact</p>
-      <p class="text-gray-800"><a href="mailto:chukwumanwafor485@gmail.com">chukwumanwafor485@gmail.com</a></p>
+      <p class="text-2xl font-bold text-gray-800">Email</p>
+      <p class="text-gray-600"><a href="mailto:chukwumanwafor485@gmail.com">chukwumanwafor485@gmail.com</a></p>
      </div>
     </div>
-    <div class="mt-6">
-     <img alt="Design Podcast Logo" class="w-16 h-16" src="https://storage.googleapis.com/a1aa/image/ENDukJiuF0YXBFEdixVtzDR0qdektmttoFXty9CFebePOndnA.jpg"/>
-    </div>
+
    </section>
    <section class="lg:w-1/2 bg-gray-100 p-6 rounded-lg flex flex-col items-center">
-    <h2 class="text-2xl font-bold text-gray-800 mb-4">Create The Best Designs <br/><span class="text-yellow-500">Innocent</span></h2>
-    <img alt="Portrait of Richard Brian" class="w-64 h-64 rounded-full mb-4" src="https://storage.googleapis.com/a1aa/image/tj6kfYdSD42bT67PMnfShCFcg9PmmKqL5g5feqrZVK2kcO7OB.jpg"/>
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">Chukwuma <span class="text-yellow-500">Innocent</span></h2>
+    <img alt="Portrait of chukwuma Innocent" class="w-64 h-64 rounded-full mb-4" src="assets/chukz.png" style="background-color: rgba(255, 170, 0, 0.911);"/>
     <div class="flex space-x-4">
      <img alt="Figma Logo" class="w-12 h-12" src="https://storage.googleapis.com/a1aa/image/04T13oehJLWrY6R1yl9mYu3I8CALQxCzabFt2cP5tOsnzZ3JA.jpg"/>
      <img alt="Sketch Logo" class="w-12 h-12" src="https://storage.googleapis.com/a1aa/image/oxYCoRL2t0LXKtYIRaq49oYcxgRnxbW9hgXSCpIebROozZ3JA.jpg"/>
@@ -98,116 +108,71 @@
   </main>
   <div class="container mx-auto px-4 py-8">
     <!-- Work Experience Section -->
-    <section class="mb-16">
-     <h2 class="text-3xl font-bold text-center mb-8">
-      My Work Experience
-     </h2>
-     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
-      <div>
-       <div class="mb-4">
-        <h3 class="font-bold">
-         Self-Employed
-        </h3>
-        <p>
-         Sep 2021 - Aug 2023
-        </p>
-       </div>
-       <div class="mb-4">
-        <h3 class="font-bold">
-         New Man Services
-        </h3>
-        <p>
-         Jan 2022 - May 2024
-        </p>
-       </div>
-       <div>
-        <h3 class="font-bold">
-         Global Solution
-        </h3>
-        <p>
-         Feb 2022 - Mar 2024
-        </p>
-       </div>
+   
+    <section class="mb-16 bg-white p-8">
+      <div class="flex justify-between items-center mb-8">
+        <h2 class="text-5xl font-extrabold text-gray-800">Work Experience</h2>
+       
       </div>
-      <div class="relative">
-       <div class="absolute left-0 top-0 h-full border-l-2 border-gray-300">
-        <div class="w-4 h-4 bg-white border-2 border-gray-300 rounded-full absolute -left-2 top-0">
+     
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Frontend Developer at Comrade Hotel Limited (2023-2024)</h3>
+          <ul class="list-disc list-inside text-base text-gray-700 leading-relaxed">
+            <li>Created user interface and user experience aspects of web applications.</li>
+            <li>Translated UI/UX design wireframes into responsive, interactive web apps and pages.</li>
+            <li>Validated user input before submitting to the back-end.</li>
+            <li>Assisted Java back-end developers with coding and troubleshooting.</li>
+            <li>Built reusable code and libraries for future use.</li>
+            <li>Optimized code and assets to ensure fast load times and smooth interactions.</li>
+            <li>Enhanced application performance for speed and scalability.</li>
+          </ul>
+          
         </div>
-        <div class="w-4 h-4 bg-white border-2 border-gray-300 rounded-full absolute -left-2 top-1/3">
+    
+        <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">UI/UX Designer at Adroit Company Ltd (2022-2024)</h3>
+          <ul class="list-disc list-inside text-base text-gray-700 leading-relaxed">
+            <li>Collaborated with project owners to understand application requirements and user needs.</li>
+            <li>Designed user interfaces and experiences for mobile applications using wireframes, mockups, and prototypes.</li>
+            <li>Created visually appealing, user-friendly designs aligned with app functionality.</li>
+            <li>Conducted user research and usability testing to gather feedback and iterate on designs.</li>
+            <li>Worked closely with developers to ensure accurate implementation of designs.</li>
+            <li>Stayed up-to-date with industry trends and best practices in UI/UX design.</li>
+          </ul>
         </div>
-        <div class="w-4 h-4 bg-white border-2 border-gray-300 rounded-full absolute -left-2 top-2/3">
-        </div>
-       </div>
-       <div class="mb-4 pl-8">
-        <h3 class="font-bold">
-         Visual Designer
-        </h3>
-        <p>
-         Visual designers create elements like logos, color schemes, and typography that represent a brand's personality, ensuring consistency across all platforms and materials.
-        </p>
-       </div>
-       <div class="mb-4 pl-8">
-        <h3 class="font-bold">
-         UI/UX Designer
-        </h3>
-        <p>
-         UI/UX designers are user interface engineering &amp; the design of user interfaces for machines and software, such as computers, home appliances.
-        </p>
-       </div>
-       <div class="pl-8">
-        <h3 class="font-bold">
-         Sr. Product Designer
-        </h3>
-        <p>
-          Product designers create prototypes—mockups or early versions of the product—to test functionality and gather feedback. These prototypes allow them to refine the design, adjusting aspects based on user testing and feedback to improve usability and performance.
-        </p>
-       </div>
       </div>
-     </div>
+    
+      <div class="flex justify-between items-center mt-16">
+        <h2 class="text-5xl font-extrabold text-gray-800">My Latest Works</h2>
+        <a class="text-xl text-orange-500 hover:underline" href="http://wa.me/+23408118358061">Explore More Works</a>
+      </div>
+      <p class="text-center text-lg text-gray-600 mb-8 mt-4">Perfect solution for digital experience</p>
+    
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-yellow-100 p-8 rounded-lg shadow-lg flex flex-col items-center">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">App Design</h3>
+          <p class="text-lg text-gray-700">Food Delivery App</p>
+          <img alt="App Design - Food Delivery App" class="mt-4 rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/dEZV5BqPSOZFO9UPQLwnZxKQz4dIT6HSKF3LMDjj3Kh05s7E.jpg" width="300"/>
+        </div>
+        <div class="bg-green-100 p-8 rounded-lg shadow-lg flex flex-col items-center">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Web Design</h3>
+          <p class="text-lg text-gray-700">Agency Website</p>
+          <img alt="Web Design - Agency Website" class="mt-4 rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/HKDgURq6WIb2E1mkqMUfeP0cxHVui4drGCNlqo9Gd2vNnzuTA.jpg" width="300"/>
+        </div>
+        <div class="bg-blue-100 p-8 rounded-lg shadow-lg flex flex-col items-center">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Brand Design</h3>
+          <p class="text-lg text-gray-700">Brand Identity</p>
+          <img alt="Brand Design - Brand Identity" class="mt-4 rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/7NUvetaHCHyye0ASHLNFhLquTUNUPvF0KM9m7YjUN7dRnzuTA.jpg" width="300"/>
+        </div>
+      </div>
     </section>
+    
+  
+    
+    
     <!-- Latest Works Section -->
-    <section class="mb-16">
-     <div class="flex justify-between items-center mb-8">
-      <h2 class="text-3xl font-bold">
-       My Latest Works
-      </h2>
-      <a class="text-orange-500" href="http:wa.me/+23408118358061">
-       Explore More Works
-      </a>
-     </div>
-     <p class="text-center mb-8">
-      Perfect solution for digital experience
-     </p>
-     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-yellow-200 p-4 rounded-lg">
-       <h3 class="font-bold mb-2">
-        App Design
-       </h3>
-       <p>
-        Food Delivery App
-       </p>
-       <img alt="App Design - Food Delivery App" class="mt-4 rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/dEZV5BqPSOZFO9UPQLwnZxKQz4dIT6HSKF3LMDjj3Kh05s7E.jpg" width="300"/>
-      </div>
-      <div class="bg-green-200 p-4 rounded-lg">
-       <h3 class="font-bold mb-2">
-        Web Design
-       </h3>
-       <p>
-        Agency Website
-       </p>
-       <img alt="Web Design - Agency Website" class="mt-4 rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/HKDgURq6WIb2E1mkqMUfeP0cxHVui4drGCNlqo9Gd2vNnzuTA.jpg" width="300"/>
-      </div>
-      <div class="bg-blue-200 p-4 rounded-lg">
-       <h3 class="font-bold mb-2">
-        Brand Design
-       </h3>
-       <p>
-        Brand Identity
-       </p>
-       <img alt="Brand Design - Brand Identity" class="mt-4 rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/7NUvetaHCHyye0ASHLNFhLquTUNUPvF0KM9m7YjUN7dRnzuTA.jpg" width="300"/>
-      </div>
-     </div>
-    </section>
+  
     <!-- Testimonials Section -->
     <section class="mb-16">
      <h2 class="text-3xl font-bold text-center mb-8">
@@ -267,52 +232,52 @@
        </a>
       </span>
      </p>
-     <div class="flex justify-center">
-      <div class="text-left">
-       <p class="mb-2">
-        Information
-       </p>
-       <p class="mb-2">
-        IJEBU-ODE, OGUN STATE, NIGERIA.
-       </p>
-       <p class="mb-2">
-        <a href="  chukwumanwafor485@gmail.com">
-         chukwumanwafor485@gmail.com
-        </a>
-       </p>
-       <p class="mb-2">
-        <a href="tel:08118358061">
-         08118358061
-        </a>
-       </p>
-      </div>
-     </div>
+     
     </section>
    </div>
-  <footer class="bg-gray-900 text-white py-12">
-   <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center">
-    <div class="space-y-4">
-     <h3 class="text-xl font-bold">Project Statistics 2022</h3>
-     <div class="flex space-x-8">
-      <div>
-       <p class="text-yellow-400">Website Design</p>
-       <p class="text-white">10</p>
-      </div>
-      <div>
-       <p class="text-yellow-400">Mobile App Design</p>
-       <p class="text-white">6</p>
-      </div>
-      <div>
-       <p class="text-yellow-400">Brand Identity</p>
-       <p class="text-white">3</p>
-      </div>
-     </div>
+   <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4 flex flex-col space-y-6 lg:space-y-0 lg:flex-row justify-between items-center">
+       <!-- Statistics Section -->
+       <div class="space-y-4 text-center lg:text-left">
+          <h3 class="text-xl font-bold">Project Statistics 2022</h3>
+          <div class="flex flex-col space-y-4 lg:flex-row lg:space-x-8 lg:space-y-0">
+             <div>
+                <p class="text-yellow-400">Website Design</p>
+                <p class="text-white">10</p>
+             </div>
+             <div>
+                <p class="text-yellow-400">Mobile App Design</p>
+                <p class="text-white">6</p>
+             </div>
+             <div>
+                <p class="text-yellow-400">Brand Identity</p>
+                <p class="text-white">3</p>
+             </div>
+          </div>
+       </div>
+       <!-- Contact Information Section with Left Padding -->
+       <div class="text-center lg:text-left space-y-2 pl-4">
+          <p class="mb-2">Lagos State, Nigeria.</p>
+          <p class="mb-2">
+             <a href="mailto:chukwumanwafor485@gmail.com" class="hover:underline">
+                chukwumanwafor485@gmail.com
+             </a>
+          </p>
+          <p class="mb-2">
+             <a href="tel:+2348118358061" class="hover:underline">
+                08118358061
+             </a>
+          </p>
+       </div>
+       <!-- Button Section -->
+       <div class="flex justify-center lg:justify-end w-full lg:w-auto">
+          <a href="#" class="bg-yellow-400 text-gray-900 px-6 py-2 rounded hover:bg-yellow-500 mt-6 lg:mt-0">
+             Know More
+          </a>
+       </div>
     </div>
-    <button class="bg-yellow-400 text-gray-900 px-6 py-2 rounded hover:bg-yellow-500 mt-6 lg:mt-0">
-     <a href="#">Know More</a>
-    </button>
-   </div>
-  </footer>
+ </footer>
+ 
   <script>
    document.getElementById('menuButton').addEventListener('click', function() {
       const mobileMenu = document.getElementById('mobileMenu');
