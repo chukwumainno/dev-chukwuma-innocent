@@ -32,6 +32,9 @@
     padding-left: 0;
     text-decoration: none; /* Removes underline if needed */
   }
+  .small-font {
+    font-size: small;
+  }
   </style>
  </head>
  <body class="bg-gray-50">
@@ -68,11 +71,11 @@
    </div>
   </header>
   <main class="container mx-auto flex flex-col lg:flex-row py-12 px-6">
-   <section class="lg:w-1/2 space-y-6">
+   <section class="lg:w-1/2 space-y-6 px-6">
     <h1 class="text-5xl font-bold text-gray-800 ">Hi! I Am</h1>
     <h1 class="are-you-serious-regular text-5xl font-bold text-gray-800">Chukwuma Innocent</h1>
-    <span class="inline-block bg-yellow-400 text-gray-800 px-3 py-1 rounded-full text-sm">UI/UX</span>
-    <span class="inline-block bg-yellow-400 text-gray-800 px-3 py-1 rounded-full text-sm">Frontend Developer</span>
+    <span class="inline-block bg-yellow-400 text-gray-800 px-3 py-1 rounded-full text-sm">UI/UX Designer</span>
+    <span class="inline-block bg-yellow-400 text-gray-800 px-3 py-1 rounded-full text-sm mx-2">Frontend Developer</span>
     <p class="text-gray-600">Designing user interfaces for over <strong>3 years</strong> as a Web developer</p>
     <div class="flex space-x-4">
      <button class="bg-yellow-500 text-white px-6 py-2 rounded hover:bg-yellow-600">
@@ -89,14 +92,11 @@
       <p class="text-2xl font-bold text-gray-800">50+</p>
       <p class="text-gray-600">Projects Done</p>
      </div>
-     <div>
-      <p class="text-2xl font-bold text-gray-800">Email</p>
-      <p class="text-gray-600"><a href="mailto:chukwumanwafor485@gmail.com">chukwumanwafor485@gmail.com</a></p>
-     </div>
+     
     </div>
 
    </section>
-   <section class="lg:w-1/2 bg-gray-100 p-6 rounded-lg flex flex-col items-center">
+   <section class="lg:w-1/2 bg-gray-100 p-6 rounded-lg flex flex-col items-center mt-6">
     <h2 class="text-2xl font-bold text-gray-800 mb-4">Chukwuma <span class="text-yellow-500">Innocent</span></h2>
     <img alt="Portrait of chukwuma Innocent" class="w-64 h-64 rounded-full mb-4" src="assets/chukz.png" style="background-color: rgba(255, 170, 0, 0.911);"/>
     <div class="flex space-x-4">
@@ -109,43 +109,38 @@
   <div class="container mx-auto px-4 py-8">
     <!-- Work Experience Section -->
    
-    <section class="mb-16 bg-white p-8">
+    <section class="mb-16 bg-white p-6">
       <div class="flex justify-between items-center mb-8">
-        <h2 class="text-5xl font-extrabold text-gray-800">Work Experience</h2>
+        <h2 class="text-3xl font-extrabold text-gray-800">Work Experience</h2>
        
       </div>
      
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Frontend Developer at Comrade Hotel Limited (2023-2024)</h3>
+          <h3 class="text-lg font-bold text-gray-800 mb-4">Frontend Developer: Comrade Hotel Ltd <span class="small-font">(2023-2024)</span> </h3>
           <ul class="list-disc list-inside text-base text-gray-700 leading-relaxed">
             <li>Created user interface and user experience aspects of web applications.</li>
             <li>Translated UI/UX design wireframes into responsive, interactive web apps and pages.</li>
-            <li>Validated user input before submitting to the back-end.</li>
-            <li>Assisted Java back-end developers with coding and troubleshooting.</li>
             <li>Built reusable code and libraries for future use.</li>
             <li>Optimized code and assets to ensure fast load times and smooth interactions.</li>
-            <li>Enhanced application performance for speed and scalability.</li>
           </ul>
           
         </div>
     
         <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">UI/UX Designer at Adroit Company Ltd (2022-2024)</h3>
+          <h3 class="text-lg font-bold text-gray-800 mb-4">UI/UX Designer: Adroit Company Ltd  <span class="small-font">(2022-2024)</span> </h3>
           <ul class="list-disc list-inside text-base text-gray-700 leading-relaxed">
             <li>Collaborated with project owners to understand application requirements and user needs.</li>
             <li>Designed user interfaces and experiences for mobile applications using wireframes, mockups, and prototypes.</li>
             <li>Created visually appealing, user-friendly designs aligned with app functionality.</li>
-            <li>Conducted user research and usability testing to gather feedback and iterate on designs.</li>
-            <li>Worked closely with developers to ensure accurate implementation of designs.</li>
             <li>Stayed up-to-date with industry trends and best practices in UI/UX design.</li>
           </ul>
         </div>
       </div>
     
       <div class="flex justify-between items-center mt-16">
-        <h2 class="text-5xl font-extrabold text-gray-800">My Latest Works</h2>
-        <a class="text-xl text-orange-500 hover:underline" href="http://wa.me/+23408118358061">Explore More Works</a>
+        <h2 class="text-3xl font-extrabold text-gray-800"> Latest Works</h2>
+        <a class="text-sm text-orange-500 hover:underline" href="http://wa.me/+23408118358061">Explore More </a>
       </div>
       <p class="text-center text-lg text-gray-600 mb-8 mt-4">Perfect solution for digital experience</p>
     
@@ -179,14 +174,12 @@
       People talk about us
      </h2>
      <p class="text-center mb-8">
-      I got a job that was in accordance with the salary and field of work, the process of submitting an application was quite easy
-     </p>
+    </p>
      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div class="bg-white p-6 rounded-lg shadow-lg text-center">
        <img alt="Testimonial 1" class="w-24 h-24 rounded-full mx-auto mb-4" height="100" src="https://storage.googleapis.com/a1aa/image/sOrICeqkoy2xUCGpEKn3IJLDlN5Mm1gDvsqFBm2r4gBkzZ3JA.jpg" width="100"/>
        <p class="mb-4">
-        I received a job offer that matched my skills and experience. The application process was straightforward and efficient.
-       </p>
+        I couldn’t have asked for a better experience. The team was friendly, professional, and guided me through each stage with care. Thanks to their help, I landed a job I’m excited about!            </p>
        <h3 class="font-bold">
         John Allendone
        </h3>
@@ -194,8 +187,7 @@
       <div class="bg-white p-6 rounded-lg shadow-lg text-center">
        <img alt="Testimonial 2" class="w-24 h-24 rounded-full mx-auto mb-4" height="100" src="https://storage.googleapis.com/a1aa/image/0bJFbi3G8II3HtTXBgeu0V2eyCav8nCUjKLENCuQL5GKnzuTA.jpg" width="100"/>
        <p class="mb-4">
-        The team was very supportive and helped me find a job that I love. The entire process was smooth and hassle-free.
-       </p>
+        They were responsive, attentive, and dedicated to finding the perfect opportunity for me. The whole experience was smooth, and I’m thrilled with the outcome!       </p>
        <h3 class="font-bold">
         Vanilla Tandika
        </h3>
@@ -203,7 +195,7 @@
       <div class="bg-white p-6 rounded-lg shadow-lg text-center">
        <img alt="Testimonial 3" class="w-24 h-24 rounded-full mx-auto mb-4" height="100" src="https://storage.googleapis.com/a1aa/image/AVKGEEFCtRKAOheePDSKfblkF8LyqtTe1tJSS33zkRBvcO7OB.jpg" width="100"/>
        <p class="mb-4">
-        A complete service from start to finish. I was able to secure a job that fits my career goals perfectly.
+        The service was incredible! The team provided personalized support every step of the way and helped me secure a job I’m truly passionate about. The process was quick and seamless
        </p>
        <h3 class="font-bold">
         Souther Heisook
