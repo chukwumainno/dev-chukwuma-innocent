@@ -21,11 +21,10 @@
     }
 
     .are-you-serious-regular {
-  font-family: "Are You Serious", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
+      font-family: "Are You Serious", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
 
     /* Specific style for each link inside the mobile menu to remove bullet points */
     #mobileMenu a {
@@ -36,9 +35,20 @@
     .small-font {
       font-size: small;
     }
+
+  /* Additional styling if needed */
+  .opacity-0 {
+    opacity: 0;
+  }
+  .opacity-100 {
+    opacity: 1;
+  }
+
   </style>
 </head>
 <body class="bg-gray-50">
+ <!-- Wrap the header in a div to control opacity -->
+<div id="headerTransition" class="transition-opacity duration-1000 opacity-100">
   <header class="bg-gray-900 text-white shadow-md">
     <div class="container mx-auto flex justify-between items-center py-4 px-6">
       <div class="text-2xl font-bold">
@@ -51,24 +61,21 @@
       </div>
       <nav class="hidden lg:flex space-x-6" id="navMenu">
         <a class="hover:text-yellow-400" href="#home">Home</a>
-        <a class="hover:text-yellow-400" href="#latest-works">Projects</a>
-        <a class="hover:text-yellow-400" href="#testimonials">Testimonia</a>
-        <a class="hover:text-yellow-400" href="#contact">Contact</a>
+        <a class="hover:text-yellow-400 transition duration-1000 ease-in-out" href="#latest-works">Projects</a>
+        <a class="hover:text-yellow-400 transition duration-1000 ease-in-out" href="#testimonials">Testimonials</a>
+        <a class="hover:text-yellow-400 transition duration-1000 ease-in-out" href="#contact">Contact</a>
       </nav>
       <button class="border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-500 hidden lg:block">
         <a href="#contact">Let's chat</a>
       </button>
     </div>
-    <div class="lg:hidden hidden flex flex-col items-center bg-gray-900 shadow-md space-y-4 p-4" id="mobileMenu">
-      <a class="hover:text-yellow-400" href="#home">Home</a>
-      <a class="hover:text-yellow-400" href="#latest-works">Projects</a>
-      <a class="hover:text-yellow-400" href="#testimonials">Testimonia</a>
-      <a class="hover:text-yellow-400" href="#contact">Contact</a>
-      <button class="border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-500">
-        <a href="#contact">Let's chat</a>
-      </button>
-    </div>
   </header>
+</div>
+
+
+
+<
+
   <main class="container mx-auto flex flex-col lg:flex-row py-12 px-6" id="home">
     <section class="lg:w-1/2 space-y-6 px-6">
       <h1 class="text-5xl font-bold text-gray-800 ">Hi! I Am <br> Chukwuma Innocent</h1>
@@ -221,6 +228,18 @@
     </div>
   </footer>
   <script>
+    // JavaScript to toggle the transition effect on project click
+    function toggleHeaderTransition() {
+      const headerTransition = document.getElementById('headerTransition');
+      headerTransition.classList.toggle('opacity-0');
+      headerTransition.classList.toggle('opacity-100');
+    }
+  
+    // Example usage: Add an event listener to project links or buttons to trigger the transition
+    document.querySelectorAll('[href="#latest-works"]').forEach((projectLink) => {
+      projectLink.addEventListener('click', toggleHeaderTransition);
+    });
+  
     document.getElementById('menuButton').addEventListener('click', function() {
       const mobileMenu = document.getElementById('mobileMenu');
       mobileMenu.classList.toggle('hidden');
